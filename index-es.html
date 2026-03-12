@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V & C Business Solutions Group LLC | Transporte y Logística</title>
+
+    <!-- Meta tags SEO -->
+    <meta name="description" content="V & C Business Solutions Group LLC ofrece transporte de carga terrestre en todo Estados Unidos y compra-venta de camiones y vehículos comerciales con atención personalizada y soluciones logísticas confiables.">
+    <meta name="keywords" content="transporte de carga, logística, camiones, compra venta de camiones, freight, trucking, Estados Unidos, V & C Business Solutions">
+    <meta property="og:title" content="V & C Business Solutions Group LLC | Transporte y Logística en EE.UU.">
+    <meta property="og:description" content="Transporte de carga, logística y compra-venta de vehículos comerciales en todo Estados Unidos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vc-business.web.app/pictures/Logo/logo-prueba.png">
+    <meta property="og:url" content="https://vc-business-solutions.web.app">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- mis estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Firebase SDK (modo compat, NO modules) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-check-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <!-- link a favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Archivo que inicializa Firebase -->
+<script src="JS/firebase.js" defer></script>
+
+<!-- Archivo principal con mi lógica -->
+<script src="JS/scripts-es.js" defer></script>
+</head>
+
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-container">
+            <picture>
+                <source srcset="pictures/Logo/logo-prueba.webp" type="image/webp">
+                <source srcset="pictures/Logo/logo-prueba.png" type="image/png">
+                <img 
+                    src="pictures/Logo/logo-prueba.png" 
+                    alt="Logo de V & C Business Solutions Group LLC" 
+                    class="logo"
+                    loading="lazy"
+                >
+            </picture>
+                <div class="brand-text">
+                    <h1>V & C Business Solutions Group LLC</h1>
+                    <p>Compra-venta de vehículos y soluciones de transporte de mercancía en EE.UU.</p>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+
+                    <li class="lang-dropdown">
+                        <button type="button" class="lang-toggle">
+                            Idioma ▾
+                        </button>
+                        <ul class="lang-menu">
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index-es.html" class="active-lang">Español</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <!-- círculos de fondo reactivos -->
+            <div class="hero-bg-circle circle1"></div>
+            <div class="hero-bg-circle circle2"></div>
+
+            <div class="hero-content">
+                <!-- typing effect-->
+                <h2 class="hero-title">
+                    <span id="typed-text"></span><span id="cursor">|</span>
+                </h2>
+
+                <p>Servicio profesional en compra-venta de vehículos, transporte de mercancía y coordinación logística en todo Estados Unidos.</p>
+                <a href="#contact" class="btn-primary">Solicitar cotización</a>
+                
+                <!--WhatsApp buttom-->
+                <a
+                    class="btn-whatsapp"
+                    href="https://wa.me/18297900962?text=Hola%20me%20gustaría%20cotizar%20un%20servicio%20de%20transporte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                > 💬 WhatsApp </a>
+</div>
+
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="services" class="reveal reveal-up">
+            <h2>Servicios</h2>
+            <p>Ofrecemos soluciones de transporte y compra-venta adaptadas a las necesidades de tu negocio.</p>
+            <ul class="services-grid">
+                <li class="service-card">
+                    <h3>Compra-venta de vehículos</h3>
+                    <p>Asesoría y gestión completa en la compra o venta de camiones y vehículos comerciales.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Transporte de carga terrestre</h3>
+                    <p>Distribución de mercancía en todo Estados Unidos con flota confiable y seguimiento.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Logística aérea</h3>
+                    <p>Coordinación de envíos urgentes vía aérea para reducir tiempos de entrega.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Coordinación marítima</h3>
+                    <p>Apoyo en la gestión de mercancía internacional vía marítima.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
+        <section id="about" class="reveal reveal-left">
+            <div class="about-text">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    En <strong>V & C Business Solutions Group LLC</strong> ofrecemos soluciones de transporte,
+                    compra-venta de vehículos y coordinación logística con un enfoque en confianza,
+                    puntualidad y atención personalizada.
+                </p>
+                <p>
+                    Somos una empresa familiar con experiencia en carga terrestre, transporte internacional
+                    y manejo de flotas comerciales.
+                </p>
+
+                <ul class="about-icons">
+                    <li><span class="icon">🚚</span> Transporte terrestre en todo EE.UU.</li>
+                    <li><span class="icon">📦</span> Manejo seguro de mercancía</li>
+                    <li><span class="icon">📡</span> Comunicación y seguimiento continuo</li>
+                    <li><span class="icon">🌎</span> Coordinación aérea y marítima</li>
+                </ul>
+            </div>
+
+            <div class="about-image">
+                <div class="image-frame"></div>
+            </div>
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contact" class="reveal reveal-up">
+    <h2>Contacto</h2>
+
+    <form id="contact-form">
+        
+
+        <div class="input-group">
+            <input type="text" id="name" name="name" autocomplete="name" placeholder=" " required>
+            <label for="name">Nombre</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" id="email" name="email" autocomplete="email" placeholder=" " required>
+            <label for="email">Correo electrónico</label>
+        </div>  
+
+        <div class="input-group">
+            <textarea id="message" name="message" autocomplete="off" placeholder=" " required></textarea>
+            <label for="message">Mensaje</label>
+        </div>
+
+        <!-- 👉 Campo trampa (honeypot) -->
+        <div class="input-group honeypot-group">
+            <input type="text" id="company" name="company" autocomplete="off" placeholder=" ">
+            <label for="company">Empresa</label>
+        </div>
+
+        <button type="submit" id="contact-submit">Enviar mensaje</button>
+        <p id="contact-status" class="contact-status" aria-live="polite"></p>
+    </form>
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 V & C Business Solutions Group LLC. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

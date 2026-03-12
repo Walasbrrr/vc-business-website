@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V & C Business Solutions Group LLC | Transportation & Logistics</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="V & C Business Solutions Group LLC provides ground freight transportation across the United States and commercial truck buying and selling, with personalized attention and reliable logistics solutions.">
+    <meta name="keywords" content="freight transportation, logistics, trucks, truck sales, trucking, United States, V & C Business Solutions">
+    <meta property="og:title" content="V & C Business Solutions Group LLC | Transportation & Logistics in the U.S.">
+    <meta property="og:description" content="Freight transportation, logistics, and commercial vehicle buying and selling throughout the United States.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vc-business.web.app/pictures/Logo/logo-prueba.png">
+    <meta property="og:url" content="https://vc-business-solutions.web.app">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Firebase SDK (compat mode) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-check-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Firebase setup -->
+    <script src="JS/firebase.js" defer></script>
+
+    <!-- Main JS -->
+    <script src="JS/scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-container">
+            <picture>
+                <source srcset="pictures/Logo/logo-prueba.webp" type="image/webp">
+                <source srcset="pictures/Logo/logo-prueba.png" type="image/png">
+                <img 
+                    src="pictures/Logo/logo-prueba.png" 
+                    alt="V & C Business Solutions Group LLC Logo" 
+                    class="logo"
+                    loading="lazy"
+                >
+            </picture>
+                <div class="brand-text">
+                    <h1>V & C Business Solutions Group LLC</h1>
+                    <p>Commercial vehicle sales and nationwide freight transportation solutions.</p>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <!-- Language Switch -->
+                    <li class="lang-dropdown">
+                        <button type="button" class="lang-toggle">
+                            Language ▾
+                        </button>
+                        <ul class="lang-menu">
+                            <li><a href="index.html" class="active-lang">English</a></li>
+                            <li><a href="index-es.html">Español</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-bg-circle circle1"></div>
+            <div class="hero-bg-circle circle2"></div>
+
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <span id="typed-text"></span><span id="cursor">|</span>
+                </h2>
+
+                <p>Professional vehicle sales, freight transportation, and logistics coordination across the United States.</p>
+
+                <a href="#contact" class="btn-primary">Request a Quote</a>
+
+                <a
+                    class="btn-whatsapp"
+                    href="https://wa.me/18297900962?text=Hello%2C%20I%20would%20like%20to%20request%20a%20transportation%20quote"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                > 💬 WhatsApp </a>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="reveal reveal-up">
+            <h2>Services</h2>
+            <p>We provide transportation and vehicle sales solutions tailored to your business needs.</p>
+            <ul class="services-grid">
+                <li class="service-card">
+                    <h3>Commercial Vehicle Sales</h3>
+                    <p>Full guidance and management for the purchase or sale of trucks and commercial vehicles.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Ground Freight Transportation</h3>
+                    <p>Nationwide freight distribution with a reliable fleet and continuous tracking.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Air Logistics</h3>
+                    <p>Coordination of urgent air shipments to reduce delivery times.</p>
+                </li>
+                <li class="service-card">
+                    <h3>Maritime Coordination</h3>
+                    <p>Support in managing international cargo via maritime transportation.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ABOUT US -->
+        <section id="about" class="reveal reveal-left">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    At <strong>V & C Business Solutions Group LLC</strong>, we offer transportation solutions,
+                    commercial vehicle sales, and logistics coordination with a focus on trust, punctuality, 
+                    and personalized service.
+                </p>
+                <p>
+                    We are a family-owned business with experience in ground freight, international logistics,
+                    and commercial fleet management.
+                </p>
+
+                <ul class="about-icons">
+                    <li><span class="icon">🚚</span> Nationwide ground transportation</li>
+                    <li><span class="icon">📦</span> Secure cargo handling</li>
+                    <li><span class="icon">📡</span> Constant communication and tracking</li>
+                    <li><span class="icon">🌎</span> Air and maritime coordination</li>
+                </ul>
+            </div>
+
+            <div class="about-image">
+                <div class="image-frame"></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="reveal reveal-up">
+            <h2>Contact</h2>
+
+            <form id="contact-form">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder=" " required>
+                    <label for="name">Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" name="message" placeholder=" " required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <!-- Honeypot -->
+                <div class="input-group honeypot-group">
+                    <input type="text" id="company" name="company" placeholder=" ">
+                    <label for="company">Company</label>
+                </div>
+
+                <button type="submit" id="contact-submit">Send Message</button>
+                <p id="contact-status" class="contact-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 V & C Business Solutions Group LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
